@@ -1,2 +1,81 @@
 // для каждого компонента нужно импортить переменные, чтобы их использовать
 @import "../main/parameters";
+
+.header {
+    position: sticky;
+    background: #FFFFFF;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1600px;
+        padding: 27px 40px 29px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin-right: 13px;
+        }
+        .text {
+            margin-top: 8px;
+        }
+        b {
+            display: block;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 1;
+            white-space: nowrap;
+            color: #0E358D;
+            margin-bottom: 4px;
+        }
+        span {
+            font-size: 12px;
+            white-space: nowrap;
+            color: #0E358D;
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        margin-left: auto;
+    }
+
+    &__number {
+        margin-left: auto;
+        text-align: right;
+
+        span {
+            display: block;
+            font-size: 20px;
+            line-height: 1.3;
+        }
+        a {
+            color: inherit;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 1;
+            text-decoration: none;
+        }
+    }
+
+    &__btn {
+        border: 0;
+        display: block;
+        padding: 18px 24px;
+        background-color: $c-primary;
+        color: #fff;
+        font-family: $add-font;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        margin-left: 26px;
+    }
+}

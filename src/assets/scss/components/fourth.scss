@@ -1,0 +1,93 @@
+@import "../main/parameters";
+
+.fourth {
+    padding-top: 85px;
+    padding-bottom: 86px;
+    max-width: 1008px;
+
+    &__title {
+        display: none;
+    }
+}
+
+.form--fourth {
+    padding: 44px 95px 37px;
+
+    .form__title {
+        font-size: 36px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    p {
+        display: none;
+    }
+}
+
+@media (max-width: $md) {
+    .fourth {
+        padding-top: 68px;
+        padding-bottom: 50px;
+    }
+    .form--fourth {
+        padding: 30px 75px 37px;
+    
+        .form__title {
+            font-size: 26px;
+            line-height: 37px;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .fourth {
+        padding-top: 31px;
+
+        &__title {
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 34px;
+            display: block;
+            text-align: center;
+            margin: 0 0 20px;
+
+            br {
+                display: none;
+            }
+
+            .f {
+                color: $c-primary;
+            }
+
+            .s {
+                white-space: nowrap;
+                color: #1741A2;
+            }
+        }
+    }
+
+    .form--fourth {
+        padding: 13px 25px 47px;
+
+        p {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: $xs) {
+    .fourth {
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+
+            br {
+                display: block;
+            }
+        }
+    }
+}

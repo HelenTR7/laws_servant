@@ -1,0 +1,156 @@
+@import "../main/parameters";
+
+.third {
+    background: #ECF2FB; 
+    padding: 140px 0 132px;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__col {
+        flex: 1 0 43%;
+        max-width: 43%;
+
+        img {
+            margin: 125px 0 38px;
+        }
+    }
+
+    &__title {
+        max-width: 335px;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 84px;
+    }
+
+    &__list {
+        flex: 1 0 57%;
+        max-width: 57%;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin: 0 0 32px;
+        }
+
+        .num {
+            width: 92px;
+            font-family: $headers-font;
+            font-weight: bold;
+            font-size: 80px;
+            line-height: 97px;
+            background: -webkit-linear-gradient(#3D78FF 5%, #0E358D 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text {
+            padding-left: 40px;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .third {
+        padding: 50px 0 49px;
+
+        &__col {
+            flex: 1 0 40%;
+            max-width: 40%;
+        }
+
+        img {
+            max-width: 52px;
+            margin: 82px 0 24px;
+        }
+
+        &__title {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        &__list {
+            flex: 1 0 60%;
+            max-width: 60%;
+
+            li {
+                margin: 0 0 21px;
+            }
+
+            .num {
+                width: 70px;
+                font-size: 53px;
+                line-height: 64px;
+            }
+
+            .text {
+                padding-left: 20px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .third {
+        display: block;
+        padding: 52px 0 20px;
+
+        &__col {
+            max-width: 100%;
+        }
+
+        img {
+            margin: 6px 0 25px;
+        }
+
+        &__title {
+            margin: 0 0 29px;
+        }
+
+        &__list {
+            max-width: 100%;
+
+            li {
+                margin: 0 0 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: $xs) {
+    .third {
+        padding: 44px 0 30px;
+
+        &__title {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        img {
+            max-width: 36px;
+            margin: 6px 0 9px;
+        }
+
+        &__list {
+            li {
+                margin: 0 0 8px;
+            }
+
+            .num {
+                min-width: 70px;
+            }
+            .text {
+                font-size: 14px;
+                line-height: 20px;
+                padding-left: 10px;
+            }
+        }
+    }
+}

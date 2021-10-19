@@ -3,6 +3,8 @@
 
 .header {
     position: sticky;
+    z-index: 2;
+    top: 0;
     background: #FFFFFF;
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
 
@@ -77,5 +79,114 @@
         text-transform: uppercase;
         border-radius: 4px;
         margin-left: 26px;
+    }
+}
+
+@media (max-width: $md) {
+    .header {
+        .container {
+            padding: 20px;
+        }
+
+        &__logo {
+            margin-right: 10px;
+
+            img {
+                max-width: 63px;
+            }
+
+            b {
+                font-size: 20px;
+            }
+
+            span {
+                font-size: 11px;
+            }
+        }
+
+        &__text {
+            display: none;
+        }
+
+        &__number {
+            span {
+                font-size: 16px;
+            }
+            a {
+                font-size: 16px;
+            }
+        }
+
+        &__btn {
+            font-size: 14px;
+            padding: 11px 23px;
+            margin-left: 14px;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .header {
+        &__logo {
+            img {
+                max-width: 38px;
+                margin-right: 10px;
+            }
+
+            b {
+                font-size: 13px;
+            }
+            span {
+                font-size: 6px;
+            }
+        }
+
+        &__number {
+            span {
+                font-size: 12px;
+            }
+            a {
+                font-size: 22px;
+            }
+        }
+
+        &__btn {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $xs) {
+    .header {
+        .container {
+            padding: 17px 20px;
+        }
+
+        &__logo {
+            .text {
+                margin: 0;
+            }
+            span {
+                font-size: 8px;
+            }
+        }
+    
+        &__text {
+        }
+    
+        &__number {
+    
+            span {
+                font-size: 11px;
+                line-height: 0.7;
+            }
+            a {
+                font-size: 14px;
+                line-height: 0;
+            }
+        }
+    
+        &__btn {
+        }
     }
 }

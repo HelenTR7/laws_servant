@@ -14,3 +14,59 @@
 @import 'components/third';
 @import 'components/fourth';
 @import 'components/footer';
+@import 'components/modals';
+
+
+.success {
+    min-height: 900px;
+    padding: 160px 0;
+    text-align: center;
+    background: url('../imgs/first-bg.jpg') center/cover no-repeat;
+
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        margin: 0 0 10px;
+    }
+
+    p {
+        font-size: 30px;
+        margin: 0 0 40px;
+    }
+
+    button {
+        text-transform: uppercase;
+        text-align: center;
+        min-width: 264px;
+        border: 0;
+        appearance: none;
+        outline: none;
+        background: #EF0B0B;
+        border-radius: 4px;
+        padding: 20px 10px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: $xs) {
+    .success {
+        min-height: 300px;
+        padding: 60px 0;
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 20px;
+            margin: 0 0 20px;
+        }
+    
+        button {
+            font-size: 14px;
+        }
+    }
+}

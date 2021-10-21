@@ -18,6 +18,7 @@
     position: relative;
 
     @media (max-width: $sm) {
+        margin-bottom: 67px;
         border-radius: 22px 22px 0px 0px;
         background: linear-gradient(178.39deg, #3D78FF -105.23%, #0E358D 95.92%);
     }

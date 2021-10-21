@@ -23,6 +23,17 @@ const Application = {
     },
     eventList: {
         modals: function(){
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop() > 100){
+                    $('.under').addClass('hidden');
+                    $('.top').removeClass('hidden');
+                } else { 
+                    $('.under').removeClass('hidden');
+                    $('.top').addClass('hidden');
+                }
+            });
+
            $('.js-close').on('click', function(){
             $('.modal').css('display','none');
         });
@@ -30,7 +41,7 @@ const Application = {
            $('.js-open').on('click', function(e){
                e.preventDefault();
 
-               $('.modal').css('display','block');
+               $('.modal').css('display','flex');
            });
 
            $(document).on('keyup', function(e) {

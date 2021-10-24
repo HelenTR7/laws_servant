@@ -1,2 +1,2 @@
 # Лендинг "Слуга закона"
-![Preview](../../dist/assets/imgs/preview.jpg "Preview")
+![Preview](./dist/assets/imgs/preview.jpg "Preview")

@@ -1,1 +1,3 @@
-# gulp_full
+# Лендинг "Слуга закона"
+
+![GitHub Preview](dist/assets/imgs/preview.jpg)
